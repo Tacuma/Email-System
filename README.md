@@ -16,49 +16,49 @@ Stacks, Object Oriented Programming (OOP), File I/O
 Output:
 =======
 
-LIST-MESSAGES-BY-DATE:
-yourcs103TAs##2nd phase of assignment 1##09-28-2005
-yourethics##academic honesty##09-22-2005
-ayoussef##next phase of assignment 1##09-21-2005
-korman##cs103##09-16-2005
-ayoussef##Do your homework##09-15-2005
-##########
+	LIST-MESSAGES-BY-DATE:
+	yourcs103TAs##2nd phase of assignment 1##09-28-2005
+	yourethics##academic honesty##09-22-2005
+	ayoussef##next phase of assignment 1##09-21-2005
+	korman##cs103##09-16-2005
+	ayoussef##Do your homework##09-15-2005
+	##########
 
-LIST-MESSAGES-FROM: ayoussef
-ayoussef##next phase of assignment 1##09-21-2005
-ayoussef##Do your homework##09-15-2005
-##########
+	LIST-MESSAGES-FROM: ayoussef
+	ayoussef##next phase of assignment 1##09-21-2005
+	ayoussef##Do your homework##09-15-2005
+	##########
 
-MESSAGE: 5
-My advice to you is to start to do your programming assignment 1 today. -AY
-##########
+	MESSAGE: 5
+	My advice to you is to start to do your programming assignment 1 today. -AY
+	##########
 
-DELETE-MOST-RECENT-MESSAGE:
-MESSAGE DELETED
-##########
+	DELETE-MOST-RECENT-MESSAGE:
+	MESSAGE DELETED
+	##########
 
-MESSAGE: 3
-listen to your professor of cs103, and follow his advice.
-You won't regret it.
+	MESSAGE: 3
+	listen to your professor of cs103, and follow his advice.
+	You won't regret it.
 
-Good luck!
-Your Chairman
-##########
+	Good luck!
+	Your Chairman
+	##########
 
-MESSAGE: 6
-NONE
-##########
+	MESSAGE: 6
+	NONE
+	##########
 
-LIST-MESSAGES-FROM: dean
-NONE
-##########
+	LIST-MESSAGES-FROM: dean
+	NONE
+	##########
 
 
 
-() Code by Tacuma Solomon
-() Not for Redistribution or Reuse.
+	() Code by Tacuma Solomon
+	() Not for Redistribution or Reuse.
 
-Press any key to continue . . . 
+	Press any key to continue . . . 
 
 
 Statement of the Problem:  
