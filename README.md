@@ -60,19 +60,97 @@ Output:
 
 	Press any key to continue . . . 
 
-
+Input:
+======
+#####queriesfile.txt
+	LIST-MESSAGES-BY-DATE
+	LIST-MESSAGES-FROM ayoussef
+	DISPLAY 5
+	DELETE-MOST-RECENT-MESSAGE
+	DISPLAY 3
+	DISPLAY 6
+	LIST-MESSAGES-FROM dean
+#####messagesfile.txt
+	FROM: ayoussef
+	DATE: 09-15-2005  
+	SUBJECT: Do your homework
+	BODY:
+	My advice to you is to start to do your programming assignment 1 today. -AY
+	##########
+	FROM: korman
+	DATE: 09-16-2005  
+	SUBJECT: cs103
+	BODY:
+	listen to your professor of cs103, and follow his advice.
+	You won't regret it.
+	
+	Good luck!
+	Your Chairman
+	##########
+	FROM: ayoussef
+	DATE: 09-21-2005  
+	SUBJECT: next phase of assignment 1
+	BODY:
+	I hope you are progressing well in your first programming assignment 
+	in cs103. By now, you should have come up with an overall design of 
+	your program, determined what classes to use to model each message and to
+	model the whole set of messages. Also, you should by now be done
+	implementing the file-reading part of your program.
+	
+	Good luck!
+	Your instructor
+	##########
+	FROM: yourethics
+	DATE: 09-22-2005  
+	SUBJECT: academic honesty
+	BODY:
+	Hello there,
+	We hope you are doing well in all your assignments.
+	Remember to do your best while maintaining the highest moral conduct.
+	You cannot cheat, you cannot download software from anywhere to
+	do your programming assignments in cs103, and you cannot ask anyone else
+	to write a program or piece of code for you to include in your cs 103
+	programming assignments. If you have any question or need help, ask the
+	instructor or the TAs; they are there to help you. They know how much to
+	tell you without giving away the answers and denying you the opportunity
+	to challenge yourself and learn.
+	
+	Good luck!
+	Your ethics
+	##########
+	FROM: yourcs103TAs
+	DATE: 09-28-2005  
+	SUBJECT: 2nd phase of assignment 1
+	BODY:
+	By now, you should have completed the coding of the classes and the 
+	main function, along with adequate documentation for you and your graders.
+	You should now turn into testing your program against the sample data 
+	that Professor Youssef provided to you on the course Web site, and do
+	the necessary debugging and corrections. 
+	
+	Remember, your program must read two input files, called literally 
+	messagesfile and queriesfile. These two files are assumed to be in the
+	same folder (or directory) as your C++ program. Remember also that your
+	program output goes to the standard output, using cout.
+	
+	Good luck!
+	Your TAs
+	##########
+		
+	
+	
 Statement of the Problem:  
 =========================
 
 This assignment involves modeling a very simple email system as C++ classes. All the email messages are addressed to you. Each email message has several data field: (1) a from-field (who it is from), (2) a date field, (3) a subject field, and (4) a body field (the text of the message). Given as input a group of email messages (each having all the fields just indicated), listed from the oldest message to the most recent, your program should be able to respond to queries of the following kinds:
 
-§         Sort (arrange) and display the received messages from the most recent to the least recent
++ Sort (arrange) and display the received messages from the most recent to the least recent
 
-§         Delete the most recent message
++ Delete the most recent message
 
-§         Display all the (non-deleted) messages from a given sender, arranged the most recent to the least recent
++ Display all the (non-deleted) messages from a given sender, arranged the most recent to the least recent
 
-§         Display a given message
++ Display a given message
 
 The precise formatting of the input, the queries, and the answers of your program is detailed below.
 
@@ -101,13 +179,13 @@ Note that each of those queries could repeat multiple times in the queries file.
 
 Here is an explanation of each kind of query.
 
-§         The first kind of query asks you to list all the undeleted messages, arranged from the most recent to the least recent message.
++ The first kind of query asks you to list all the undeleted messages, arranged from the most recent to the least recent message.
 
-§         The 2nd kind of query asks you to list all the undeleted messages from the sender whose email address is the specified email-address-string.  The messages must be arranged from the most recent to the least recent message.
++ The 2nd kind of query asks you to list all the undeleted messages from the sender whose email address is the specified email-address-string.  The messages must be arranged from the most recent to the least recent message.
 
-§         The 3rd kind of query asks you to delete the most recent message.
++ The 3rd kind of query asks you to delete the most recent message.
 
-§         The 4th kind of query asks you to show (output) the body of the kth most recent message in the remaining list of undeleted messages.
++ The 4th kind of query asks you to show (output) the body of the kth most recent message in the remaining list of undeleted messages.
 
 The output:
 
@@ -117,7 +195,7 @@ Your program must take as input the two input files above, in that order. That i
 
 Your program must then write the output to the standard output (using cout). The output of the first two kinds of query should begin by repeating the same query on a new line, followed by a colon (:), followed on the next line by a sequence of lines, one line per message; each line will have the email address of the sender, then the subject of the message, and finally the date of the message (using the same date format as explained above). Put ## between each field and the next in each line. (see the sample input and output for illustration)
 
-The output of the 3rd kind of query has two line, where the first is “DELETE-MOST-RECENT-MESSAGE:” and the second line is “DELETED MESSAGE” or “THERE ARE NO MESSAGES TO DELETE”. 
+The output of the 3rd kind of query has two line, where the first is "DELETE-MOST-RECENT-MESSAGE:" and the second line is "DELETED MESSAGE" or "THERE ARE NO MESSAGES TO DELETE". 
 
 The output of the 4th kind of query should begin on a new line with
 
